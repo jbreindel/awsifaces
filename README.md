@@ -14,8 +14,14 @@ While go will eliminate any unused code, you can simply copy any of these interf
 ### Usage
 
 ```go
-func NewSqs(cfg aws.Config) SqsClient {
-	return sqs.NewFromConfig(cfg)
+import (
+	"github.com/aws/aws-sdk-go-v2/aws"
+	"github.com/aws/aws-sdk-go-v2/service/sfn"
+	awsifaces "github.com/jbreindel/awsifaces/service"
+)
+
+func NewSfn(cfg aws.Config) awsifaces.SfnClient {
+	return sfn.NewFromConfig(cfg)
 }
 ```
 
