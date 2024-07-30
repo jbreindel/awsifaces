@@ -6,7 +6,7 @@ A go module containing generated interfaces and mocks for services in [aws-sdk-g
 ### Installation
 
 ```sh
-go get https://github.com/jbreindel/awsifaces
+go get github.com/jbreindel/awsifaces
 ```
 
 While go will eliminate any unused code, you can simply copy any of these interfaces into your project if you don't want additional dependencies.
